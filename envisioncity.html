@@ -3,30 +3,30 @@
 
 <head>
 	<title>Envision City - Your Vision of Toronto</title>
-	
+
 	<meta charset="utf-8">
 	<meta name="description" content="Envision City is a...">
 	<meta name="keywords" content="envision,city">
 	<meta name="author" content="Harry Dong">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
+
 	<!-- Bootstrap Core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	
+
 	<!-- Custom CSS -->
 	<link href="css/animate-custom.css" rel="stylesheet">
 	<link href="css/envision-styles.css" rel="stylesheet">
-	
+
 	<!-- Custom Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	
+
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-	<script src="js/envision-js.min.js"></script>
+	<script src="js/envision-js.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
@@ -38,7 +38,7 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-	
+
 	<!-- Navigation -->
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -79,49 +79,56 @@
 
 	<section id="mission" class="container content-section text-center">
 		<div class="col-sm-5 col-sm-offset-1 col-sm-push-5 wow fadeIn">
-			<img src="img/me.jpg" class="img-responsive" />
+			<img src="css/img/hands.jpg" class="img-responsive" />
 		</div>
 		<div class="col-sm-5 col-sm-pull-5 wow fadeIn">
-			<h2>The Mission</h2>
-			<p>Envision City is a platform for youth to submit and share public space designs. We makes the process easy, simple, and rewarding with a workshop and prizes at the end.</p>
+			<h2>What is Envision City?</h2>
+			<p>Envision City is a platform to submit and share public space designs. We make the process simple, elegant, and seamless during our workshop.</p>
 		</div>
 	</section>
+
+
 
 	<section id="how-it-works" class="container content-section text-center">
 		<h2>How it Works</h2>
 		<h4>Imagine. Build. Explore.</h4>
 		<br>
 
-		<div class="col-sm-3 col-sm-offset-2 wow fadeInLeft">
-			<img src="img/me.jpg" class="img-responsive" />
+		<div class="col-md-3 col-md-offset-2 col-sm-4 wow fadeInLeft">
+			<img id="how-img-1" src="css/img/gardiner.jpg" class="how-img img-responsive" />
 		</div>
-		<div class="col-sm-5 wow fadeInRight">
-			<h3>Pick a space you want to change</h3>
-			<h4>Discover your location</h4>
-			<p>Several spaces are featured on the "envision spaces" page of this website to download in JPG format. Choose any of these space or other public spaces in Toronto.</p>
-		</div>
-
-
-		<div class="clearfix"></div>
-
-		<div class="col-sm-3 col-sm-offset-2 col-sm-push-5 wow fadeInRight">
-			<img src="img/me.jpg" class="img-responsive" />
-		</div>
-		<div class="col-sm-5 col-sm-pull-3 wow fadeInLeft">
-			<h3>Photoshop a public space design.</h3>
-			<h4>Design your city</h4>
-			<p>Experiment with Photoshop in adding creative aspects to the space such as plants, parks, and public facilities. We have highlighted sections recommended for re-design in green.</p>
+		<div id="how-div-1" class="col-md-5 col-sm-8 wow fadeInRight">
+			<div id="how-child-1" class="vertical-center">
+				<h3>Pick a space you want to change</h3>
+				<h4>Discover your location</h4>
+				<p>Two challenges are featured on this website: choose one to tackle!</p>
+			</div>
 		</div>
 
 		<div class="clearfix"></div>
 
-		<div class="col-sm-3 col-sm-offset-2 wow fadeInLeft">
-			<img src="img/me.jpg" class="img-responsive" />
+		<div class="col-md-3 col-md-offset-2 col-md-push-5 col-sm-4 col-sm-push-8 wow fadeInRight">
+			<img id="how-img-2" src="css/img/gardiner-edited.jpg" class="how-img img-responsive" />
 		</div>
-		<div class="col-sm-5 wow fadeInRight">
-			<h3>Submit through Envision City!</h3>
-			<h4>Scroll down to the "envision" section to submit</h4>
-			<p>We're looking forward to seeing your submissions!</p>
+		<div id="how-div-2" class="col-md-5 col-md-pull-3 col-sm-8 col-sm-pull-4 wow fadeInLeft">
+			<div id="how-child-2" class="vertical-center">
+				<h3>Photoshop a public space design.</h3>
+				<h4>Design your city</h4>
+				<p>Experiment with Photoshop in adding creative aspects to the space such as plants, parks, and public facilities. </p>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="col-md-3 col-md-offset-2 col-sm-4 wow fadeInLeft">
+			<img id="how-img-3" src="css/img/mouse.jpg" class="how-img img-responsive" />
+		</div>
+		<div id="how-div-3" class="col-md-5 col-sm-8 wow fadeInRight">
+			<div id="how-child-3" class="vertical-center">
+				<h3>Submit through Envision City!</h3>
+				<h4>Scroll down to the "envision" section to submit</h4>
+				<p>We're looking forward to seeing your submissions!</p>
+			</div>
 		</div>
 
 	</section>
@@ -138,37 +145,37 @@
 		<div class="col-sm-10 col-sm-offset-1 wow zoomIn">
 			<h2>Envision Spaces</h2>
 			<p>Coming soon.</p>
-			
+
 			<div class="col-sm-2 col-sm-offset-1">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
 			<div class="col-sm-2">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
 			<div class="col-sm-2">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
 			<div class="col-sm-2">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
 			<div class="col-sm-2">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
-			
+
 			<div class="col-sm-2 col-sm-offset-1">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
 			<div class="col-sm-2">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
 			<div class="col-sm-2">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
 			<div class="col-sm-2">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
 			<div class="col-sm-2">
-				<img src="img/square.jpg" class="img-responsive" />
+				<img src="css/img/square.jpg" class="img-responsive" />
 			</div>
 		</div>
 	</section>

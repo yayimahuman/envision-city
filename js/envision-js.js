@@ -24,6 +24,45 @@ $(function() {
         }
     });
 });
+$(function(){
+    if ($(window).width() > 767) {
+        var h1 = $('#how-img-1').css("height");
+        var h2 = $('#how-img-2').css("height");
+        var h3 = $('#how-img-3').css("height");
+        $("#how-div-1").css({ height: h1});
+        $("#how-div-2").css({ height: h2});
+        $("#how-div-3").css({ height: h3});
+    }
+
+    else if ($(window).width() < 768) {
+        h1 = $('#how-child-1').css("height");
+        h2 = $('#how-child-2').css("height");
+        h3 = $('#how-child-3').css("height");
+        $("#how-div-1").css({ height: h1});
+        $("#how-div-2").css({ height: h2});
+        $("#how-div-3").css({ height: h3});
+    }
+
+    $( window ).on("resize", function() {
+        if ($(window).width() > 767) {
+            h1 = $('#how-img-1').css("height");
+            h2 = $('#how-img-2').css("height");
+            h3 = $('#how-img-3').css("height");
+            $("#how-div-1").css({ height: h1});
+            $("#how-div-2").css({ height: h2});
+            $("#how-div-3").css({ height: h3});
+        }
+        else {
+            h1 = $('#how-child-1').css("height");
+            h2 = $('#how-child-2').css("height");
+            h3 = $('#how-child-3').css("height");
+            $("#how-div-1").css({ height: h1});
+            $("#how-div-2").css({ height: h2});
+            $("#how-div-3").css({ height: h3});
+        }
+    });
+});
+
 
 
 // Google Maps Scripts
