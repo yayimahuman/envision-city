@@ -107,8 +107,12 @@ a:hover, a:focus, a.categories:hover, a.categories:focus {
     background: #f1a852;
     color:#fff;
 }
-#envision .col-sm-2{
+#envision .col-sm-3{
     margin-top:30px;
+    padding:none;
+}
+#envision .col-sm-3 .img-responsive{
+    width: 100%;
 }
 #contact{
     background: url(img/contact-bg.jpg) no-repeat center center;

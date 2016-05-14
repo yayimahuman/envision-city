@@ -1,6 +1,6 @@
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 70) {
+    if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".skyline").addClass("skyline-collapse");
     } else {
@@ -64,7 +64,7 @@ $(function(){
 });
 
 
-
+/*
 // Google Maps Scripts
 var map = null;
 // When the window has finished loading create our google map below
@@ -101,4 +101,4 @@ function init() {
         map: map,
         icon: image
     });*/
-}
+//}
