@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Bootstrap Core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<!-- Custom CSS -->
 	<link href="css/animate-custom.css" rel="stylesheet">
 	<link href="css/envision-styles.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 	<script src="js/envision-js.js"></script>
@@ -57,7 +57,7 @@
 					<li class="hidden"><a href="#page-top"></a></li>
 					<li><a class="page-scroll" href="#how-it-works">How it Works</a></li>
 					<li><a class="page-scroll" href="#challenges">Challenges</a></li>
-					<li><a class="page-scroll" href="#criteria">What to Submit</a></li>
+					<!--<li><a class="page-scroll" href="#criteria">What to Submit</a></li>-->
 					<li><a class="page-scroll" href="#contact">Submit</a></li>
 				</ul>
 			</div>
@@ -113,7 +113,7 @@
 		<div id="how-div-3" class="col-md-5 col-sm-8 wow fadeInRight">
 			<div id="how-child-3" class="vertical-center">
 				<h3>Submit through Envision City!</h3>
-				<h4>Scroll down to the "envision" section to submit</h4>
+				<h4>Envision your change</h4>
 				<p>We're looking forward to seeing your submissions!</p>
 			</div>
 		</div>
@@ -123,36 +123,36 @@
 
 
 	<section id="challenges" class="container content-section text-center">
-		<h2>Featured Challenge</h2>
+		<h2>Featured Challenges</h2>
 		<br>
 		<div class="col-sm-8 col-sm-offset-2 wow fadeIn">
-			<p>For May of 2016, we want your ideas on how can everyday objects around Toronto can be improved in function and sustainability.</p>
+			<p>For May and June, we are emphasizing how objects and locations around Toronto can be improved in function and sustainability.</p>
 		</div>
 
 		<div id="chal-div-1" class="col-sm-5 col-sm-offset-2 wow fadeInLeft">
 			<div id="chal-child-1" class="vertical-center">
-				<p>An example is the design of edible wheat spoons in India to eliminate the waste of plastic spoons. Your idea doesn’t need to be as groundbreaking as edible spoons, as long as it is thoughtful and original.</p>
+				<p>Challenge 1: Redesigning Everyday Objects. Take an object that you encounter on your way to school as the focus of your design. What are the potential and possibilities for this everyday object to be more useful or sustainable? <a onClick="link(true)" type="button" data-toggle="modal" data-target="#chal-modal-1">Read more.</a></p>
 			</div>
 		</div>
 		<div id="chal-img-1" class="col-sm-3 wow fadeInRight">
-			<img class="img-responsive" src="css/img/spoon.jpg" />
+			<img class="img-responsive" src="css/img/stand.jpg" />
 		</div>
 
 		<div class="clearfix"></div>
 		<br><br>
 		<div id="chal-div-2" class="col-sm-5 col-sm-offset-2 col-sm-push-3 wow fadeInRight">
 			<div id="chal-child-2" class="vertical-center">
-				<p>Our challenge for you is to take an object that you encounter on your way to school as the focus of your design, such as a bike rack, lamp post, or a hot dog stand, and find a way to improve upon it.</p>
+				<p>Challenge 2: Under the Gardiner. The Gardiner Expressway has been a vital for Toronto commuters since its completion in 1966. We want you to draw unique ways of using the downtown space beside the expressway. <a onClick="link(false)" type="button" data-toggle="modal" data-target="#chal-modal-1">Read more.</a></p>
 			</div>
 		</div>
 		<div id="chal-img-2" class="col-sm-3 col-sm-pull-5 wow fadeInLeft">
-			<img class="img-responsive" src="css/img/stand.jpg" />
+			<img class="img-responsive" src="css/img/gardiner-demolished.jpg" />
 		</div>
 	</section>
 
 
 
-	<section id="criteria" class="container content-section text-center">
+	<!--<section id="criteria" class="container content-section text-center">
 		<h2>What to Submit</h2>
 		<br>
 		<div class="col-sm-8 col-sm-offset-2">
@@ -168,7 +168,7 @@
 			</ul>
 
 		</div>
-	</section>
+	</section>-->
 
 
 
@@ -193,6 +193,25 @@
 			<p>Copyright <i class="fa fa-copyright"></i> Envision City 2016<!--<?php echo date("Y"); ?>--></p>
 		</div>
 	</footer>
+
+
+	<div id="chal-modal-1" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 id="modal-h" class="modal-title">Challenge 1</h4>
+				</div>
+				<div class="modal-body">
+					<iframe id="modal-i" />
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 
 </body>
 </html>

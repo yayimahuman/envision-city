@@ -35,6 +35,16 @@ function divHeight(){
         document.getElementById('chal-div-2').style.height = h2;
     }
 }
+function link(s){
+    if (s){
+        document.getElementById('modal-h').innerHTML = "Challenge 1";
+        document.getElementById('modal-i').src = "css/img/c1.pdf";
+    }
+    else{
+        document.getElementById('modal-h').innerHTML = "Challenge 2";
+        document.getElementById('modal-i').src = "css/img/c2.pdf";
+    }
+}
 $(window).scroll(function() {
     sky();
 });
