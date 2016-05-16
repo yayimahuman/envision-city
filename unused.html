@@ -1,0 +1,77 @@
+<section id="mission" class="container content-section text-center">
+    <div class="col-sm-5 col-sm-offset-1 col-sm-push-5 wow fadeIn">
+        <img src="css/img/hands.jpg" class="img-responsive" />
+    </div>
+    <div class="col-sm-5 col-sm-pull-5 wow fadeIn">
+        <h2>What is Envision City?</h2>
+        <p>Envision City is a platform to submit and share public space designs. We make the process simple, elegant, and seamless during our workshop.</p>
+    </div>
+</section>
+
+<section id="discover" class="container content-section text-center">
+    <div class="col-sm-10 col-sm-offset-1 wow fadeIn">
+        <h2>Discover Spaces</h2>
+
+        <div class="col-sm-3">
+            <img src="css/img/bridge-edited.jpg" class="img-responsive" />
+        </div>
+        <div class="col-sm-3">
+            <img src="css/img/parking-edited.jpg" class="img-responsive" />
+        </div>
+        <div class="col-sm-3">
+            <img src="css/img/office-edited.jpg" class="img-responsive" />
+        </div>
+        <div class="col-sm-3">
+            <img src="css/img/playground-edited.jpg" class="img-responsive" />
+        </div>
+    </div>
+</section>
+
+<section id="explore" class="container content-section text-center">
+    <div class="col-sm-10 col-sm-offset-1">
+        <h2>Explore Submissions</h2>
+        <p>Coming soon.</p>
+        <div class="wow fadeIn" id="map"></div>
+    </div>
+</section>
+
+<script>
+
+// Google Maps Scripts
+var map = null;
+// When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', init);
+google.maps.event.addDomListener(window, 'resize', function() {
+    map.setCenter(new google.maps.LatLng(43.7000, -79.4000));
+});
+
+function init() {
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    var mapOptions = {
+        zoom: 12,
+        center: new google.maps.LatLng(43.6534438, -79.3862788),
+
+        // Disables the default Google Maps UI components
+        disableDefaultUI: false,
+        scrollwheel: false,
+        draggable: true,
+
+        styles: [{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000002},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]
+    };
+
+    // Using a div with id="map"
+    var mapElement = document.getElementById('map');
+
+    // Create the Google Map using out element and options defined above
+    map = new google.maps.Map(mapElement, mapOptions);
+
+    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+    /*var image = 'img/map-marker.png';
+    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var beachMarker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: image
+    });*/
+}
+</script>
