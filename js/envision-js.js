@@ -10,31 +10,32 @@ function sky(){
     }
 }
 function divHeight(){
+    console.log("checked div heights");
     if ($(window).width() > 767) {
-        h1 = $('#how-img-1').css("height");
-        h2 = $('#how-img-2').css("height");
-        h3 = $('#how-img-3').css("height");
-        document.getElementById('how-div-1').style.height = h1;
-        document.getElementById('how-div-2').style.height = h2;
-        document.getElementById('how-div-3').style.height = h3;
-        h1 = $('#chal-img-1').css("height");
-        h2 = $('#chal-img-2').css("height");
-        document.getElementById('chal-div-1').style.height = h1;
-        document.getElementById('chal-div-2').style.height = h2;
+        var h1 = $('#how-img-1').css("height");
+        var h2 = $('#how-img-2').css("height");
+        var h3 = $('#how-img-3').css("height");
+        var h4 = $('#chal-img-1').css("height");
+        var h5 = $('#chal-img-2').css("height");
     }
     else {
-        h1 = $('#how-child-1').css("height");
-        h2 = $('#how-child-2').css("height");
-        h3 = $('#how-child-3').css("height");
+        var h1 = $('#how-child-1').css("height");
+        var h2 = $('#how-child-2').css("height");
+        var h3 = $('#how-child-3').css("height");
+        var h4 = $('#chal-child-1').css("height");
+        var h5 = $('#chal-child-2').css("height");
+    }
+    if (h1*h2*h3*h4*h5 != 0){
         document.getElementById('how-div-1').style.height = h1;
         document.getElementById('how-div-2').style.height = h2;
         document.getElementById('how-div-3').style.height = h3;
-        h1 = $('#chal-child-1').css("height");
-        h2 = $('#chal-child-2').css("height");
-        document.getElementById('chal-div-1').style.height = h1;
-        document.getElementById('chal-div-2').style.height = h2;
+        document.getElementById('chal-div-1').style.height = h4;
+        document.getElementById('chal-div-2').style.height = h5;
+        clearInterval(divTimer);
+        console.log("div heights: " + h1 + ", " + h2 + ", " + h3 + ", " + h4 + ", " + h5);
     }
 }
+divTimer = setInterval(divHeight, 100);
 function link(s){
     if (s){
         document.getElementById('modal-h').innerHTML = "Challenge 1";
@@ -48,6 +49,7 @@ function link(s){
 $(window).scroll(function() {
     sky();
 });
+
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         $('html, body').stop().animate({
