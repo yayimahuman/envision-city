@@ -27,7 +27,6 @@ function divHeight(){
     }
     console.log("div heights: " + h1 + ", " + h2 + ", " + h3 + ", " + h4 + ", " + h5);
     if (h1 != "0px"  && h2 != "0px" && h3 != "0px" && h4 != "0px" && h5 != "0px"){
-        console.log("heights greater than 20");
         document.getElementById('how-div-1').style.height = h1;
         document.getElementById('how-div-2').style.height = h2;
         document.getElementById('how-div-3').style.height = h3;
